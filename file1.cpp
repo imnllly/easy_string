@@ -4,7 +4,6 @@
 using namespace std;
 
 void itc_hello_str(string name) {
-	cin >> name;
 	cout << "Hello, " << name;
 }
 
