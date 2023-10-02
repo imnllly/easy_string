@@ -11,8 +11,8 @@ string itc_hello_str(string name) {
 long long itc_len(string str) {
 	cin >> str;
 	int len = 0;
-	for(int i = 0; s[i] != '\0'; i++) len++;
-	// return str.length();
+	for (int i = 0; str[i] != '\0'; i++) len++;
+	return len;
 }
 
 void itc_print_copy_str(string str, int number) {
