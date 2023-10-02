@@ -3,9 +3,9 @@
 #include "str_easy.h"
 using namespace std;
 
-string itc_hello_str(string name) {
+void itc_hello_str(string name) {
 	cin >> name;
-	return "Hello, " + name;
+	cout << "Hello, " << name;
 }
 
 long long itc_len(string str) {
