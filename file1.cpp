@@ -3,8 +3,8 @@
 #include "str_easy.h"
 using namespace std;
 
-void itc_hello_str(string name) {
-	cout << "Hello, " << name;
+string itc_hello_str(string name) {
+	return << "Hello, " << name;
 }
 
 long long itc_len(string str) {
