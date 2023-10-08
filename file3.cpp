@@ -26,7 +26,7 @@ double itc_percent_lower_uppercase(string str) {
 string itc_reverse_str(string str) {
 	int len = itc_len(str);
 	string str2{};
-	for (int i = len; i >= 0; i--) {
+	for (int i = len - 1; i >= 0; i--) {
 		str2 += str[i];
 	}
 	return str2;
