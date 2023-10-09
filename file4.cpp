@@ -6,12 +6,14 @@ using namespace std;
 
 string itc_slice_str(string str, int start, int end) {
 	string result = "";
+	int len = itc_len(str);
+	if (end > len) end = len;
 	if (end < start) return str;
 	for (int i = start; i <= end; i++) {
 		result += str[i];
 	}
 	return result;
-} 
+}
 
 
 bool itc_equal_reverse(string str) {
