@@ -20,7 +20,7 @@ double itc_percent_lower_uppercase(string str) {
 		if (str[i] >= 'a' && str[i] <= 'z') s++;
 		else if (str[i] >= 'A' && str[i] <= 'Z') p++;
 	}
-	return p / s;
+	return p / s * 100;
 }
 
 string itc_reverse_str(string str) {
