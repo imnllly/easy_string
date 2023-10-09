@@ -7,7 +7,7 @@ using namespace std;
 string itc_even_place(string str) {
 	string str2{};
 	for (int i = 0; str[i] != '\0'; i++) {
-		if (str[i] % 2 == 0) str2 += str[i];
+		if (i % 2 == 1) str2 += str[i];
 	}
 	return str2;
 }
