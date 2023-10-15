@@ -24,10 +24,16 @@ bool itc_equal_reverse(string str) {
 // доделать функцию !!
 string itc_cmp_str(string str1, string str2, int num) {
 	num--;
+	long long len2 = itc_len(str2);
 	string str_new{};
-	for (int i = 0; i < itc_len(str1); i++) {
+	for (int i = 0; i <= num; i++) {
 		str_new += str1[i];
 		if (i == num) str_new += str2;
 	}
+	num++;
+	for (int j = itc_len(str_new); j < itc_len(str1); j++) {
+		str_new += str1[num];
+		num++;
+	}
 	return str_new;
-} 
+}
