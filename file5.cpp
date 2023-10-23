@@ -1,9 +1,9 @@
-#include <iostream>
+/* #include <iostream>
 #include <string>
 #include "str_easy.h"
 using namespace std;
 
-/* // äîäåëàòü
+// äîäåëàòü
 int itc_find_str(string str1, string str2) {
 	int j = 0;
 	for (int i = 0; i < itc_len(str1); i++) {
