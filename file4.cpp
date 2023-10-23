@@ -21,9 +21,9 @@ bool itc_equal_reverse(string str) {
 	return 0;
 }
 
-// доделать функцию !!
 string itc_cmp_str(string str1, string str2, int num) {
 	num--;
+	long long len1 = itc_len(str1);
 	long long len2 = itc_len(str2);
 	string str_new{};
 	for (int i = 0; i <= num; i++) {
@@ -31,9 +31,12 @@ string itc_cmp_str(string str1, string str2, int num) {
 		if (i == num) str_new += str2;
 	}
 	num++;
-	for (int j = itc_len(str_new); j < itc_len(str1); j++) {
+	for (int j = itc_len(str_new); j < len1; j++) {
 		str_new += str1[num];
 		num++;
 	}
+	if (len2 > len1) {
+		return itc_slice_str(str_new, 0, len1 - 1);
+	} 
 	return str_new;
 }
