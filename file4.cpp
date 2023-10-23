@@ -3,10 +3,10 @@
 #include "str_easy.h"
 using namespace std;
 
-// проверить пустую строку
 string itc_slice_str(string str, int start, int end) {
 	string result = "";
 	int len = itc_len(str);
+	if (len == 0) return "";
 	if (end > len) end = len;
 	if (end < start) return str;
 	for (int i = start; i <= end; i++) {
