@@ -3,7 +3,7 @@
 #include "str_easy.h"
 using namespace std;
 
-// доделать
+/* // Г¤Г®Г¤ГҐГ«Г ГІГј
 int itc_find_str(string str1, string str2) {
 	int j = 0;
 	for (int i = 0; i < itc_len(str1); i++) {
@@ -13,9 +13,9 @@ int itc_find_str(string str1, string str2) {
 }
 
 string itc_three_str(string str1, string str2, string str3) {
-	// что это
+	// Г·ГІГ® ГЅГІГ®
 }
 
 int itc_max_char_on_end(string str) {
-	// я устала, пока
-}
+	// Гї ГіГ±ГІГ Г«Г , ГЇГ®ГЄГ 
+} */
