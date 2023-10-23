@@ -6,10 +6,14 @@ using namespace std;
 string itc_slice_str(string str, int start, int end) {
 	string result = "";
 	int len = itc_len(str);
-	if (len == 0) return "";
-	if (end > len) end = len;
-	if (end < start) return str;
-	for (int i = start; i <= end; i++) {
+
+	if (end > len) 
+		end = len - 1;
+
+	if (end < start) 
+		return str;
+
+	for (int i = start ; i <= end; i++) {
 		result += str[i];
 	}
 	return result;
