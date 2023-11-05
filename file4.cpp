@@ -32,6 +32,7 @@ string itc_cmp_str(string str1, string str2, int num) {
 	if (num == 0) {
 		str_new = itc_slice_str(str2 + str1, 0, len1 - 1);
 	}
+	else if (num > len1) return str1;
 	else {
 		num--;
 		for (int i = 0; i <= num; i++) {
